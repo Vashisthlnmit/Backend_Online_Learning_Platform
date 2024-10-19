@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/online_platform_newnetwork
+    username: postgres
+    password: Vashisth123
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  mail:
+    host: localhost
+    port: 1025
+    username: vashisth
+    password: Vashisth123
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enable: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+application:
+  security:
+    jwt:
+      secret-key: h4oibhrjtelwtritkwtiorwbt4iotrrlro4ibrbosbeporbpeiewo
+      expiration: 8640000
+  properties:
+    document:
+      upload-directory: doc-upload
+server:
+  port: 8090
+
+
+
